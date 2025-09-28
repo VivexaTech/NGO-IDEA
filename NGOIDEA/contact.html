@@ -162,8 +162,8 @@
 
         .navbar ul li a:hover,
         .navbar ul li a.active {
-             color: var(--secondary-color);
-             border-bottom: 2px solid var(--secondary-color);
+            color: var(--secondary-color);
+            border-bottom: 2px solid var(--secondary-color);
         }
 
         .hamburger {
@@ -177,20 +177,46 @@
         .hamburger:hover {
             color: var(--secondary-color);
         }
-        
+
         /* Mobile Menu */
         @media (max-width: 992px) {
-            .hamburger { display: block; }
-            .nav-menu {
-                position: absolute; top: 100%; left: 0; width: 100%;
-                background-color: var(--white); flex-direction: column;
-                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); max-height: 0;
-                overflow: hidden; transition: max-height 0.4s ease-out, padding 0.4s ease-out;
+            .hamburger {
+                display: block;
             }
-            .nav-menu.active { max-height: 50vh; padding: 15px; }
-            .nav-menu li { margin: 0; width: 100%; }
-            .nav-menu li a { display: block; padding: 12px 30px; text-align: left; border-bottom: 1px solid #f0f0f0; }
-            .nav-menu li:last-child a { border-bottom: none; }
+
+            .nav-menu {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background-color: var(--white);
+                flex-direction: column;
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.4s ease-out, padding 0.4s ease-out;
+            }
+
+            .nav-menu.active {
+                max-height: 50vh;
+                padding: 15px;
+            }
+
+            .nav-menu li {
+                margin: 0;
+                width: 100%;
+            }
+
+            .nav-menu li a {
+                display: block;
+                padding: 12px 30px;
+                text-align: left;
+                border-bottom: 1px solid #f0f0f0;
+            }
+
+            .nav-menu li:last-child a {
+                border-bottom: none;
+            }
         }
 
         /* === PAGE HEADER === */
@@ -206,7 +232,7 @@
             font-size: 3.5em;
             margin: 0;
         }
-        
+
         .btn {
             background-color: var(--accent-color);
             color: var(--white);
@@ -220,7 +246,7 @@
             border: none;
             cursor: pointer;
         }
-        
+
         .btn:hover {
             background-color: #0582aa;
             transform: translateY(-5px);
@@ -295,18 +321,21 @@
             resize: vertical;
             min-height: 150px;
         }
-        
+
         /* Map Section */
         .map-section {
             padding-bottom: 80px;
         }
+
         .map-container {
             position: relative;
             overflow: hidden;
-            padding-top: 56.25%; /* 16:9 Aspect Ratio */
+            padding-top: 56.25%;
+            /* 16:9 Aspect Ratio */
             border-radius: 12px;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
         }
+
         .map-container iframe {
             position: absolute;
             top: 0;
@@ -424,10 +453,10 @@
         .social-icons a:hover {
             transform: scale(1.1);
         }
-        
+
         .ologo {
-             width: 120px;
-             border-radius: 15px;
+            width: 120px;
+            border-radius: 15px;
         }
 
         .footer-bottom {
@@ -491,10 +520,27 @@
 
         /* Responsive */
         @media (max-width: 768px) {
-            .section-title, .page-header h1 { font-size: 2em; }
-            .section-subtitle { font-size: 1em; }
-            .whatsapp-float { width: 50px; height: 50px; bottom: 20px; left: 20px; font-size: 24px; }
-            .whatsapp-float i { margin-top: 13px; }
+
+            .section-title,
+            .page-header h1 {
+                font-size: 2em;
+            }
+
+            .section-subtitle {
+                font-size: 1em;
+            }
+
+            .whatsapp-float {
+                width: 50px;
+                height: 50px;
+                bottom: 20px;
+                left: 20px;
+                font-size: 24px;
+            }
+
+            .whatsapp-float i {
+                margin-top: 13px;
+            }
         }
     </style>
 </head>
@@ -563,7 +609,7 @@
                     </div>
                 </div>
                 <div class="contact-form">
-                    <form action="thengoidea@gmail.com" method="POST">
+                    <form action="https://formsubmit.co/thengoidea@gmail.com" method="POST">
                         <input type="hidden" name="_captcha" value="false">
                         <input type="hidden" name="_next" value="https://www.ngoidea.org/">
                         <div class="form-group">
@@ -593,9 +639,10 @@
 
     <section class="map-section">
         <div class="container">
-             <div class="map-container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.950199793134!2d77.08573981508258!3d28.63124598241775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d05adaa58742b%3A0x3ff1118fd226788a!2sBlock%20J%2C%20Vishnu%20Garden%2C%20New%20Delhi%2C%20Delhi%20110018!5e0!3m2!1sen!2sin!4v1664455855235!5m2!1sen!2sin" 
-                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.950199793134!2d77.08573981508258!3d28.63124598241775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d05adaa58742b%3A0x3ff1118fd226788a!2sBlock%20J%2C%20Vishnu%20Garden%2C%20New%20Delhi%2C%20Delhi%20110018!5e0!3m2!1sen!2sin!4v1664455855235!5m2!1sen!2sin"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </section>
@@ -666,7 +713,7 @@
                         navbar.classList.add("scrolled");
                     } else {
                         mybutton.style.display = "none";
-                         // Keep the scrolled class on this page
+                        // Keep the scrolled class on this page
                     }
                 };
             }
