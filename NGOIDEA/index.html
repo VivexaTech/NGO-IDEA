@@ -12,31 +12,54 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
-        <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
-<link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
-<link rel="shortcut icon" href="favicon/favicon.ico" />
-<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
-<meta name="apple-mobile-web-app-title" content="NGO IDEA" />
-<link rel="manifest" href="favicon/site.webmanifest" />
+    <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="NGO IDEA" />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "NGO IDEA",
+      "url": "https://www.ngoidea.org/",
+      "logo": "https://www.ngoidea.org/img/ologo.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+91-7827303573",
+        "contactType": "Customer Service",
+        "email": "thengoidea@gmail.com"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Block J, 143, Vishnu Garden",
+        "addressLocality": "New Delhi",
+        "postalCode": "110018",
+        "addressCountry": "IN"
+      },
+      "sameAs": [
+        "https://www.facebook.com/",
+        "https://www.twitter.com/",
+        "https://www.instagram.com/",
+        "https://www.linkedin.com/"
+      ]
+    }
+    </script>
+
     <style>
-        /* Root Variables for Consistency */
         :root {
             --primary-color: #091e3e;
-            /* Dark Blue */
             --secondary-color: #06a3da;
-            /* Light Blue */
             --accent-color: #06a3da;
-            /* Light Blue */
             --light-bg: #f8f9fa;
-            /* Light Gray */
             --dark-bg: #061429;
-            /* Very Dark Blue for Footer */
             --text-color: #333;
             --white: #fff;
             --whatsapp-green: #25D366;
         }
 
-        /* General Body Styles */
         body {
             font-family: 'Poppins', sans-serif;
             margin: 0;
@@ -49,7 +72,6 @@
 
         * {
             box-sizing: border-box;
-            /* Ensures padding and borders are included in the element's total width and height */
         }
 
         .container {
@@ -115,7 +137,6 @@
             box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
         }
 
-
         @keyframes pulse {
             0% {
                 transform: scale(1);
@@ -143,7 +164,6 @@
             opacity: 1;
             transform: translateY(0);
         }
-
 
         .header-top {
             background-color: var(--light-bg);
@@ -242,7 +262,6 @@
             color: var(--secondary-color);
         }
 
-        /* Mobile Menu */
         .nav-menu {
             display: flex;
         }
@@ -291,12 +310,10 @@
             }
         }
 
-        /* Hero Section */
         .hero {
             background: linear-gradient(rgba(9, 30, 62, 0.8), rgba(9, 30, 62, 0.8)), url('img/image2.jpg') no-repeat center center/cover;
             color: var(--white);
             padding: 120px 5%;
-            /* Use padding on sides for smaller screens */
             display: flex;
             align-items: center;
             min-height: 90vh;
@@ -378,7 +395,6 @@
             color: var(--secondary-color);
         }
 
-        /* Stats Panel Section */
         .stats-panel {
             padding: 0;
             background-color: var(--light-bg);
@@ -388,12 +404,10 @@
             display: flex;
             width: 100%;
             flex-wrap: wrap;
-            /* Allows items to wrap on smaller screens */
         }
 
         .stat-item {
             flex: 1 1 300px;
-            /* Flex-grow, flex-shrink, and basis for responsiveness */
             padding: 40px 20px;
             display: flex;
             align-items: center;
@@ -446,7 +460,6 @@
             line-height: 1;
         }
 
-        /* About Section */
         .about {
             padding: 80px 0;
             background-color: var(--light-bg);
@@ -485,7 +498,6 @@
             transform: scale(1.1);
         }
 
-        /* Services Section */
         .services {
             padding: 80px 0;
         }
@@ -498,7 +510,6 @@
 
         .service-item {
             background-color: #f0faff;
-            /* MODIFIED */
             padding: 35px;
             border-radius: 12px;
             text-align: center;
@@ -529,7 +540,6 @@
             margin-bottom: 15px;
         }
 
-        /* === NEW ATTENTION-GRABBING PACKAGE SECTION === */
         .cta-package {
             padding: 80px 0;
             background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
@@ -550,10 +560,8 @@
             display: flex;
             justify-content: center;
             gap: 20px 60px;
-            /* Row and column gap */
             margin-bottom: 50px;
             flex-wrap: wrap;
-            /* Allow wrapping on smaller screens */
         }
 
         .package-list {
@@ -572,12 +580,10 @@
 
         .package-list li i {
             color: var(--whatsapp-green);
-            /* A bright color for the checkmark */
             margin-right: 15px;
             font-size: 1.3em;
         }
 
-        /* === NEW CTA PACKAGE ANIMATION === */
         .cta-package.animate-on-scroll .package-list li {
             opacity: 0;
             transform: translateX(-30px);
@@ -589,7 +595,6 @@
             transform: translateX(0);
         }
 
-        /* Staggered Delay for List Items */
         .cta-package.animate-on-scroll.visible .package-list:first-child li:nth-child(1) {
             transition-delay: 0.2s;
         }
@@ -614,16 +619,12 @@
             transition-delay: 1.2s;
         }
 
-        /* === END CTA PACKAGE ANIMATION === */
-
-
         .cta-package .btn {
             background-color: var(--white);
             color: var(--primary-color);
             font-size: 1.2em;
             padding: 16px 45px;
             animation: pulse 2s infinite;
-            /* Re-using the pulse animation */
             display: inline-flex;
             align-items: center;
             gap: 10px;
@@ -631,14 +632,10 @@
 
         .cta-package .btn:hover {
             background-color: #f0f0f0;
-            /* A slightly off-white for hover */
             transform: translateY(-5px) scale(1.05);
             box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
         }
 
-        /* === END NEW PACKAGE SECTION === */
-
-        /* Why Choose Us Section */
         .why-choose-us {
             padding: 80px 0;
             background-color: var(--light-bg);
@@ -652,7 +649,6 @@
 
         .feature-item {
             background: #f0faff;
-            /* MODIFIED */
             padding: 25px;
             border-radius: 10px;
             text-align: center;
@@ -663,7 +659,6 @@
             transform: scale(1.05);
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
             background: var(--white);
-            /* ADDED */
         }
 
         .feature-item i {
@@ -677,7 +672,6 @@
             transform: rotateY(360deg);
         }
 
-        /* Our Flawless Process Section - UPDATED LAYOUT */
         .process {
             padding: 80px 0;
         }
@@ -687,14 +681,12 @@
             justify-content: space-between;
             position: relative;
             flex-wrap: wrap;
-            /* Allow wrapping on smaller screens */
         }
 
         .process-timeline::before {
             content: '';
             position: absolute;
             top: 45px;
-            /* Align with the center of the icon */
             left: 5%;
             right: 5%;
             height: 4px;
@@ -708,9 +700,7 @@
             padding: 0 15px;
             position: relative;
             min-width: 200px;
-            /* Minimum width for wrapping */
             margin-bottom: 40px;
-            /* Space when wrapped */
         }
 
         .process-step .icon {
@@ -726,7 +716,6 @@
             display: inline-block;
             transition: transform 0.3s, background-color 0.3s, color 0.3s, border-color 0.3s;
             position: relative;
-            /* For z-index to work */
             z-index: 1;
         }
 
@@ -742,11 +731,9 @@
             margin-bottom: 15px;
         }
 
-        /* Responsive adjustments for the process timeline */
         @media (max-width: 992px) {
             .process-timeline::before {
                 display: none;
-                /* Hide horizontal line on tablets and mobiles */
             }
 
             .process-timeline {
@@ -760,7 +747,6 @@
             }
         }
 
-        /* Procedure Section */
         .procedure {
             padding: 80px 0;
         }
@@ -807,7 +793,6 @@
             background-color: var(--primary-color);
         }
 
-        /* FAQ Section */
         .faq {
             padding: 80px 0;
             background-color: var(--light-bg);
@@ -847,7 +832,6 @@
             font-size: 1em;
         }
 
-        /* Contact Us Section */
         .contact {
             padding: 80px 0;
         }
@@ -916,7 +900,6 @@
             min-height: 150px;
         }
 
-        /* === NEW POPUP FORM STYLES === */
         #popup-overlay {
             position: fixed;
             top: 0;
@@ -924,9 +907,7 @@
             width: 100%;
             height: 100%;
             background-color: rgba(9, 30, 62, 0.85);
-            /* Use primary color for overlay */
             display: none;
-            /* Hidden by default */
             justify-content: center;
             align-items: center;
             z-index: 2000;
@@ -1009,7 +990,6 @@
             color: var(--primary-color);
         }
 
-        /* Footer */
         .footer {
             background-color: var(--dark-bg);
             color: #ccc;
@@ -1083,7 +1063,6 @@
 
         .footer-col ul li a::before {
             content: '\f105';
-            /* Font Awesome angle right */
             font-family: 'Font Awesome 6 Free';
             font-weight: 900;
             margin-right: 8px;
@@ -1127,10 +1106,8 @@
             border-top: 1px solid rgba(255, 255, 255, 0.1);
         }
 
-        /* Back to Top Button */
         #back-to-top-btn {
             display: none;
-            /* Hidden by default, shown by JS */
             justify-content: center;
             align-items: center;
             position: fixed;
@@ -1154,7 +1131,6 @@
             transform: scale(1.1);
         }
 
-        /* Floating WhatsApp Button */
         .whatsapp-float {
             position: fixed;
             width: 60px;
@@ -1184,8 +1160,6 @@
             border-radius: 15px;
         }
 
-
-        /* Responsive Design */
         @media (max-width: 768px) {
             .hero {
                 min-height: 70vh;
@@ -1292,410 +1266,438 @@
     </header>
 
     <nav class="navbar" role="navigation" aria-label="Main navigation">
-        <a href="#" class="logo" aria-label="NGO IDEA Home">NGO IDEA</a>
+        <a href="index.html" class="logo" aria-label="NGO IDEA Home">NGO IDEA</a>
         <div class="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">
             <i class="fas fa-bars"></i>
         </div>
         <ul class="nav-menu">
-            <li><a href="#" aria-label="Home page">Home</a></li>
-            <li><a href="#" aria-label="About us">About Us</a></li>
-            <li><a href="#" aria-label="Business setup services">Business Setup</a></li>
-            <li><a href="services" aria-label="NGO services">NGO Services</a></li>
-            <li><a href="#" aria-label="Blog">Blogs</a></li>
-            <li><a href="contact" aria-label="Contact us">Contact Us</a></li>
+            <li><a href="index.html" aria-label="Home page">Home</a></li>
+            <li><a href="about.html" aria-label="About us">About Us</a></li>
+            <li><a href="business-setup.html" aria-label="Business setup services">Business Setup</a></li>
+            <li><a href="services.html" aria-label="NGO services">NGO Services</a></li>
+            <li><a href="blogs.html" aria-label="Blog">Blogs</a></li>
+            <li><a href="contact.html" aria-label="Contact us">Contact Us</a></li>
         </ul>
     </nav>
 
-    <section class="hero" role="region" aria-label="Hero section">
-        <div class="container">
-            <div class="hero-content">
-                <h1>From Idea to Impact. Simplified.</h1>
-                <p>Expert legal and digital solutions for NGOs & Businesses in India. We handle the complexities, so you
-                    can focus on your mission.</p>
-                <a href="contact" class="btn open-popup-trigger" aria-label="Get a Free Consultation">
-                    Get a Free Consultation <i class="fas fa-arrow-right"></i>
-                </a>
-                <div class="hero-features">
-                    <span><i class="fas fa-check-circle"></i> Govt. Recognized</span>
-                    <span><i class="fas fa-check-circle"></i> Fast Turnaround</span>
-                    <span><i class="fas fa-check-circle"></i> 24/7 Support</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="stats-panel" role="region" aria-label="Our Achievements">
-        <div class="container" style="padding:0; max-width: 100%;">
-            <div class="stats-grid">
-                <div class="stat-item stat-item-blue">
-                    <div class="icon-wrapper"><i class="fas fa-hands-helping"></i></div>
-                    <div class="stat-text">
-                        <h3>No. Of NGO</h3>
-                        <p class="stat-number" data-target="10000">0</p>
-                    </div>
-                </div>
-                <div class="stat-item stat-item-white">
-                    <div class="icon-wrapper"><i class="fas fa-hand-holding-heart"></i></div>
-                    <div class="stat-text">
-                        <h3>Donation Beneficiary</h3>
-                        <p class="stat-number" data-target="500">0</p>
-                    </div>
-                </div>
-                <div class="stat-item stat-item-blue">
-                    <div class="icon-wrapper"><i class="fas fa-check-double"></i></div>
-                    <div class="stat-text">
-                        <h3>Projects Done</h3>
-                        <p class="stat-number" data-target="12000">0</p>
+    <main>
+        <section class="hero" role="region" aria-label="Hero section">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>From Idea to Impact. Simplified.</h1>
+                    <p>Expert legal and digital solutions for NGOs & Businesses in India. We handle the complexities, so
+                        you
+                        can focus on your mission.</p>
+                    <a href="contact.html" class="btn open-popup-trigger" aria-label="Get a Free Consultation">
+                        Get a Free Consultation <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <div class="hero-features">
+                        <span><i class="fas fa-check-circle"></i> Govt. Recognized</span>
+                        <span><i class="fas fa-check-circle"></i> Fast Turnaround</span>
+                        <span><i class="fas fa-check-circle"></i> 24/7 Support</span>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="about animate-on-scroll" role="region" aria-label="About section">
-        <div class="container about-flex">
-            <div class="about-content">
-                <h2 class="section-title" style="text-align: left;">Pioneering Your Path to Success</h2>
-                <p>At NGO IDEA, we are more than just consultants; we are your dedicated partners in navigating the
-                    intricate landscape of legal, compliance, and digital frameworks in India.</p>
-                <h3>Our Foundation</h3>
-                <p>As a premier consultancy firm incorporated under the Companies Act, 2013, and recognized by the Govt.
-                    of India, we specialize in simplifying complex legal frameworks. We are committed to empowering
-                    NGOs, startups, and established companies with clear, accessible, and actionable assistance.</p>
-                <h3>Mission & Vision</h3>
-                <p>We exist to fuel the engines of social change and economic growth. We empower visionaries by clearing
-                    the path to success, transforming complex registration processes into a simple, supportive journey
-                    toward building impactful and sustainable ventures.</p>
-            </div>
-            <div class="about-image">
-                <img src="img/image1.png" alt="Team discussing work" loading="lazy">
-            </div>
-        </div>
-    </section>
-    <section class="cta-package animate-on-scroll" role="region" aria-label="Special package offer">
-        <div class="container">
-            <div class="cta-package-content">
-                <h2 class="section-title">Get The Complete NGO Launch Package</h2>
-                <p class="section-subtitle">Everything you need to start, operate, and receive funding. Our all-in-one
-                    package handles every critical registration for a seamless launch.</p>
-                <div class="package-grid">
-                    <ul class="package-list">
-                        <li><i class="fas fa-check-circle"></i> NGO Registration</li>
-                        <li><i class="fas fa-check-circle"></i> 12A & 80G Certificate</li>
-                        <li><i class="fas fa-check-circle"></i> NGO Darpan</li>
-                    </ul>
-                    <ul class="package-list">
-                        <li><i class="fas fa-check-circle"></i> E-Anudan</li>
-                        <li><i class="fas fa-check-circle"></i> CSR-1 Certificate</li>
-                        <li><i class="fas fa-check-circle"></i> MSME Certificate</li>
-                    </ul>
-                </div>
-                <a href="contact" class="btn open-popup-trigger" aria-label="Get This Complete Package">Launch Your
-                    NGO Now <i class="fas fa-rocket"></i></a>
-            </div>
-        </div>
-    </section>
-    <section class="services animate-on-scroll" role="region" aria-label="Services section">
-        <div class="container">
-            <h2 class="section-title">A Spectrum of Comprehensive Solutions</h2>
-            <p class="section-subtitle">From foundational registrations to digital growth strategies, our services are
-                meticulously designed to support every stage of your organization's lifecycle.</p>
-            <div class="service-grid">
-                <div class="service-item">
-                    <i class="fas fa-hands-helping"></i>
-                    <h3>Streamlined NGO Formation</h3>
-                    <p>Begin your social impact journey with confidence. We manage complete registration for Trusts,
-                        Societies, and Section 8 Companies.</p>
-                </div>
-                <div class="service-item">
-                    <i class="fas fa-donate"></i>
-                    <h3>Funding for NGOs</h3>
-                    <p>Secure the financial resources you need. We specialize in CSR project proposal writing and
-                        connecting NGOs with relevant corporate and institutional funders.</p>
-                </div>
-                <div class="service-item">
-                    <i class="fas fa-microphone-alt"></i>
-                    <h3>Training, Seminars & Workshops</h3>
-                    <p>From planning to execution, we help you organize impactful training sessions, seminars, and
-                        workshops on various social and developmental issues.</p>
-                </div>
-                <div class="service-item">
-                    <i class="fas fa-certificate"></i>
-                    <h3>Tax Exemption Certifications</h3>
-                    <p>Maximize your fundraising potential. Our experts simplify the 12A and 80G certification process
-                        for tax-exempt status.</p>
-                </div>
-                <div class="service-item">
-                    <i class="fas fa-hand-holding-usd"></i>
-                    <h3>Strategic Funding Guidance</h3>
-                    <p>Navigate the funding landscape effectively. We assist with grant proposals and connect you with
-                        donor opportunities.</p>
-                </div>
-                <div class="service-item">
-                    <i class="fas fa-file-invoice"></i>
-                    <h3>Impactful Reporting Solutions</h3>
-                    <p>Showcase your achievements with professionally prepared annual and project reports designed to
-                        engage stakeholders.</p>
-                </div>
-
-                <div class="service-item">
-                    <i class="fas fa-building"></i>
-                    <h3>Effortless Business Incorporation</h3>
-                    <p>Build a strong legal foundation for your enterprise. We offer expert assistance for all types of
-                        company registrations.</p>
-                </div>
-                <div class="service-item">
-                    <i class="fas fa-laptop-code"></i>
-                    <h3>Website Development</h3>
-                    <p>Get a professional online presence with a custom-designed website, basic CMS for content editing,
-                        advanced SEO setup, and free domain &amp; hosting for the first year.</p>
-                </div>
-                <div class="service-item">
-                    <i class="fas fa-rocket"></i>
-                    <h3>Startup India Registration</h3>
-                    <p>Accelerate your startup's growth. We provide specialized support for Private Limited, LLP, and
-                        OPC registrations.</p>
-                </div>
-                <div class="service-item">
-                    <i class="fas fa-percent"></i>
-                    <h3>Seamless GST Compliance</h3>
-                    <p>Stay compliant with tax regulations effortlessly. We manage swift and accurate GST registration
-                        and filing services.</p>
-                </div>
-
-                <div class="service-item">
-                    <i class="fas fa-file-contract"></i>
-                    <h3>Proactive Annual Compliance</h3>
-                    <p>Ensure your organization maintains perfect legal and financial standing with our comprehensive
-                        annual compliance services.</p>
-                </div>
-                <div class="service-item">
-                    <i class="fas fa-user-tie"></i>
-                    <h3>Dedicated Expert Consultation</h3>
-                    <p>Receive personalized advice and solutions with a dedicated consultant assigned to manage all your
-                        legal and compliance needs.</p>
-                </div>
-                <div class="service-item">
-                    <i class="fas fa-chalkboard-teacher"></i>
-                    <h3>Empowerment Workshops</h3>
-                    <p>Strengthen your team’s capabilities with our expert-led training on governance, compliance, and
-                        effective management.</p>
-                </div>
-                <div class="service-item">
-                    <i class="fas fa-infinity"></i>
-                    <h3>Lifetime Advisory Partnership</h3>
-                    <p>Our commitment to your success is long-term. Benefit from our complimentary lifetime consultancy
-                        on any future challenges.</p>
-                </div>
-                <div class="service-item">
-                    <i class="fas fa-globe-asia"></i>
-                    <h3>Nationwide Legal Reach</h3>
-                    <p>Access our expert registration and compliance solutions from anywhere in India, ensuring uniform
-                        quality and support.</p>
-                </div>
-
-
-            </div>
-        </div>
-    </section>
-
-    <section class="why-choose-us animate-on-scroll" role="region" aria-label="Why choose us section">
-        <div class="container">
-            <h2 class="section-title">The NGO IDEA Advantage</h2>
-            <p class="section-subtitle">Discover the cornerstones of our service that make us the preferred partner for
-                organizations across India.</p>
-            <div class="features-grid">
-                <div class="feature-item">
-                    <i class="fas fa-check-circle"></i>
-                    <h3>Govt. of India Recognized</h3>
-                    <p>We are a recognized entity, ensuring credibility and compliance.</p>
-                </div>
-                <div class="feature-item">
-                    <i class="fas fa-users"></i>
-                    <h3>Trained & Professional Experts</h3>
-                    <p>Our team consists of skilled and experienced professionals.</p>
-                </div>
-                <div class="feature-item">
-                    <i class="fas fa-headset"></i>
-                    <h3>24x7 Platform</h3>
-                    <p>Get support and access our services anytime you need.</p>
-                </div>
-                <div class="feature-item">
-                    <i class="fas fa-shield-alt"></i>
-                    <h3>Data Security & Trust</h3>
-                    <p>Your information is safe and secure with our robust systems.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="process animate-on-scroll" role="region" aria-label="Our process section">
-        <div class="container">
-            <h2 class="section-title">Our Proven 5-Step Path to Success</h2>
-            <p class="section-subtitle">We've refined our workflow into five clear, efficient steps, ensuring
-                transparency and peace of mind from our first conversation to long-term support.</p>
-            <div class="process-timeline">
-                <div class="process-step">
-                    <div class="icon"><i class="fas fa-comments"></i></div>
-                    <h3>Consultation</h3>
-                    <p>It all begins with understanding your vision. We listen to your goals and provide strategic
-                        advice to chart the best path forward.</p>
-                </div>
-                <div class="process-step">
-                    <div class="icon"><i class="fas fa-file-alt"></i></div>
-                    <h3>Documentation</h3>
-                    <p>Say goodbye to paperwork headaches. Our meticulous team guides you in preparing and verifying
-                        every necessary document.</p>
-                </div>
-                <div class="process-step">
-                    <div class="icon"><i class="fas fa-paper-plane"></i></div>
-                    <h3>Submission</h3>
-                    <p>We take charge of the formal procedures, professionally handling the submission of your
-                        application to all relevant authorities.</p>
-                </div>
-                <div class="process-step">
-                    <div class="icon"><i class="fas fa-check-double"></i></div>
-                    <h3>Approval</h3>
-                    <p>Stay informed, not anxious. We proactively track your application, manage follow-ups, and ensure
-                        timely approvals.</p>
-                </div>
-                <div class="process-step">
-                    <div class="icon"><i class="fas fa-headset"></i></div>
-                    <h3>Support</h3>
-                    <p>Our partnership doesn't end here. We provide continuous support to ensure your operations remain
-                        compliant and successful.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="clients animate-on-scroll" role="region" aria-label="Our Clients">
-        <div class="container">
-            <h2 class="section-title">Trusted by Top-Tier Clients</h2>
-            <p class="section-subtitle">We are proud to have collaborated with some of India's leading NGOs and top-tier
-                organizations on impactful government projects.</p>
-            <div class="client-logos-grid">
-                <div class="client-logo">
-                    <img src="img/logo1.jpeg" alt="Client 1">
-                </div>
-                <div class="client-logo">
-                    <img src="img/logo2.jpeg" alt="Client 2">
-                </div>
-                <div class="client-logo">
-                    <img src="img/logo3.jpeg" alt="Client 3">
-                </div>
-                <div class="client-logo">
-                    <img src="img/logo4.jpeg" alt="Client 4">
-                </div>
-                <div class="client-logo">
-                    <img src="img/logo5.png" alt="Client 5">
-                </div>
-                <div class="client-logo">
-                    <img src="img/logo6.jpeg" alt="Client 6">
-                </div>
-                <div class="client-logo">
-                    <img src="img/logo7.jpg" alt="Client 7">
-                </div>
-                <div class="client-logo">
-                    <img src="img/logo8.png" alt="Client 8">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="procedure animate-on-scroll" role="region" aria-label="Procedure section">
-        <div class="container">
-            <h2 class="section-title">Getting Started Is Easy</h2>
-            <p class="section-subtitle">Follow our straightforward, four-step onboarding process to begin your journey
-                with NGO IDEA today.</p>
-            <div class="procedure-grid">
-                <div class="procedure-step">
-                    <div class="step-number">01</div>
-                    <h3>Provide Contact Information</h3>
-                    <p>Reach out and schedule a call. Our team is eager to learn about you and your organizational goals
-                        to provide tailored solutions.</p>
-                </div>
-                <div class="procedure-step">
-                    <div class="step-number">02</div>
-                    <h3>Make Appropriate Payments</h3>
-                    <p>Choose the services that align with your requirements and complete the secure payment process to
-                        get started.</p>
-                </div>
-                <div class="procedure-step">
-                    <div class="step-number">03</div>
-                    <h3>Mail Your Documents</h3>
-                    <p>Easily submit your documents online. Our experts are on standby to assist with any questions and
-                        ensure everything is in order.</p>
-                </div>
-                <div class="procedure-step">
-                    <div class="step-number">04</div>
-                    <h3>Sit Back and Relax</h3>
-                    <p>Your work is done. Our dedicated team will now manage the entire process efficiently, striving
-                        for the fastest possible turnaround.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="contact animate-on-scroll" role="region" aria-label="Contact Us">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <p class="section-subtitle">Have a question or a project in mind? Fill out the form or contact us directly.
-                We're here to help you succeed.</p>
-            <div class="contact-grid">
-                <div class="contact-info-block">
-                    <h3>Contact Information</h3>
-                    <p>Our team is available to assist you. Reach out through any of the following channels.</p>
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <span>+91 7827303573</span>
+        <section class="stats-panel" role="region" aria-label="Our Achievements">
+            <div class="container" style="padding:0; max-width: 100%;">
+                <div class="stats-grid">
+                    <div class="stat-item stat-item-blue">
+                        <div class="icon-wrapper"><i class="fas fa-hands-helping"></i></div>
+                        <div class="stat-text">
+                            <h3>No. Of NGO</h3>
+                            <p class="stat-number" data-target="10000">0</p>
                         </div>
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <span>thengoidea@gmail.com</span>
+                    </div>
+                    <div class="stat-item stat-item-white">
+                        <div class="icon-wrapper"><i class="fas fa-hand-holding-heart"></i></div>
+                        <div class="stat-text">
+                            <h3>Donation Beneficiary</h3>
+                            <p class="stat-number" data-target="500">0</p>
                         </div>
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>143, Ground Floor, Vishnu Garden, Delhi - 10018</span>
+                    </div>
+                    <div class="stat-item stat-item-blue">
+                        <div class="icon-wrapper"><i class="fas fa-check-double"></i></div>
+                        <div class="stat-text">
+                            <h3>Projects Done</h3>
+                            <p class="stat-number" data-target="12000">0</p>
                         </div>
                     </div>
                 </div>
-                <div class="contact-form">
-                    <form action="https://formsubmit.co/thengoidea@gmail.com" method="POST">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_next" value="https://www.ngoidea.org/">
-                        <div class="form-group">
-                            <input type="text" name="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="number" name="number" placeholder="Your Phone number" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" name="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" name="state" placeholder="Your State" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" name="subject" placeholder="Subject" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea name="message" placeholder="Your Message" required></textarea>
-                        </div>
-                        <button type="submit" class="btn">Send Message</button>
-                    </form>
+            </div>
+        </section>
+
+        <section class="about animate-on-scroll" role="region" aria-label="About section">
+            <div class="container about-flex">
+                <div class="about-content">
+                    <h2 class="section-title" style="text-align: left;">Pioneering Your Path to Success</h2>
+                    <p>At NGO IDEA, we are more than just consultants; we are your dedicated partners in navigating the
+                        intricate landscape of legal, compliance, and digital frameworks in India.</p>
+                    <h3>Our Foundation</h3>
+                    <p>As a premier consultancy firm incorporated under the Companies Act, 2013, and recognized by the
+                        Govt.
+                        of India, we specialize in simplifying complex legal frameworks. We are committed to empowering
+                        NGOs, startups, and established companies with clear, accessible, and actionable assistance.</p>
+                    <h3>Mission & Vision</h3>
+                    <p>We exist to fuel the engines of social change and economic growth. We empower visionaries by
+                        clearing
+                        the path to success, transforming complex registration processes into a simple, supportive
+                        journey
+                        toward building impactful and sustainable ventures.</p>
+                </div>
+                <div class="about-image">
+                    <img src="img/image1.png" alt="A dedicated team at NGO IDEA collaborating on a project"
+                        loading="lazy">
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
+        <section class="cta-package animate-on-scroll" role="region" aria-label="Special package offer">
+            <div class="container">
+                <div class="cta-package-content">
+                    <h2 class="section-title">Get The Complete NGO Launch Package</h2>
+                    <p class="section-subtitle">Everything you need to start, operate, and receive funding. Our
+                        all-in-one
+                        package handles every critical registration for a seamless launch.</p>
+                    <div class="package-grid">
+                        <ul class="package-list">
+                            <li><i class="fas fa-check-circle"></i> NGO Registration</li>
+                            <li><i class="fas fa-check-circle"></i> 12A & 80G Certificate</li>
+                            <li><i class="fas fa-check-circle"></i> NGO Darpan</li>
+                        </ul>
+                        <ul class="package-list">
+                            <li><i class="fas fa-check-circle"></i> E-Anudan</li>
+                            <li><i class="fas fa-check-circle"></i> CSR-1 Certificate</li>
+                            <li><i class="fas fa-check-circle"></i> MSME Certificate</li>
+                        </ul>
+                    </div>
+                    <a href="contact.html" class="btn open-popup-trigger" aria-label="Get This Complete Package">Launch
+                        Your
+                        NGO Now <i class="fas fa-rocket"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="services animate-on-scroll" role="region" aria-label="Services section">
+            <div class="container">
+                <h2 class="section-title">A Spectrum of Comprehensive Solutions</h2>
+                <p class="section-subtitle">From foundational registrations to digital growth strategies, our services
+                    are
+                    meticulously designed to support every stage of your organization's lifecycle.</p>
+                <div class="service-grid">
+                    <div class="service-item">
+                        <i class="fas fa-hands-helping"></i>
+                        <h3>Streamlined NGO Formation</h3>
+                        <p>Begin your social impact journey with confidence. We manage complete registration for Trusts,
+                            Societies, and Section 8 Companies.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-donate"></i>
+                        <h3>Funding for NGOs</h3>
+                        <p>Secure the financial resources you need. We specialize in CSR project proposal writing and
+                            connecting NGOs with relevant corporate and institutional funders.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-microphone-alt"></i>
+                        <h3>Training, Seminars & Workshops</h3>
+                        <p>From planning to execution, we help you organize impactful training sessions, seminars, and
+                            workshops on various social and developmental issues.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-certificate"></i>
+                        <h3>Tax Exemption Certifications</h3>
+                        <p>Maximize your fundraising potential. Our experts simplify the 12A and 80G certification
+                            process
+                            for tax-exempt status.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-hand-holding-usd"></i>
+                        <h3>Strategic Funding Guidance</h3>
+                        <p>Navigate the funding landscape effectively. We assist with grant proposals and connect you
+                            with
+                            donor opportunities.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-file-invoice"></i>
+                        <h3>Impactful Reporting Solutions</h3>
+                        <p>Showcase your achievements with professionally prepared annual and project reports designed
+                            to
+                            engage stakeholders.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-building"></i>
+                        <h3>Effortless Business Incorporation</h3>
+                        <p>Build a strong legal foundation for your enterprise. We offer expert assistance for all types
+                            of
+                            company registrations.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-laptop-code"></i>
+                        <h3>Website Development</h3>
+                        <p>Get a professional online presence with a custom-designed website, basic CMS for content
+                            editing,
+                            advanced SEO setup, and free domain &amp; hosting for the first year.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-rocket"></i>
+                        <h3>Startup India Registration</h3>
+                        <p>Accelerate your startup's growth. We provide specialized support for Private Limited, LLP,
+                            and
+                            OPC registrations.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-percent"></i>
+                        <h3>Seamless GST Compliance</h3>
+                        <p>Stay compliant with tax regulations effortlessly. We manage swift and accurate GST
+                            registration
+                            and filing services.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-file-contract"></i>
+                        <h3>Proactive Annual Compliance</h3>
+                        <p>Ensure your organization maintains perfect legal and financial standing with our
+                            comprehensive
+                            annual compliance services.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-user-tie"></i>
+                        <h3>Dedicated Expert Consultation</h3>
+                        <p>Receive personalized advice and solutions with a dedicated consultant assigned to manage all
+                            your
+                            legal and compliance needs.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        <h3>Empowerment Workshops</h3>
+                        <p>Strengthen your team’s capabilities with our expert-led training on governance, compliance,
+                            and
+                            effective management.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-infinity"></i>
+                        <h3>Lifetime Advisory Partnership</h3>
+                        <p>Our commitment to your success is long-term. Benefit from our complimentary lifetime
+                            consultancy
+                            on any future challenges.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-globe-asia"></i>
+                        <h3>Nationwide Legal Reach</h3>
+                        <p>Access our expert registration and compliance solutions from anywhere in India, ensuring
+                            uniform
+                            quality and support.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="why-choose-us animate-on-scroll" role="region" aria-label="Why choose us section">
+            <div class="container">
+                <h2 class="section-title">The NGO IDEA Advantage</h2>
+                <p class="section-subtitle">Discover the cornerstones of our service that make us the preferred partner
+                    for
+                    organizations across India.</p>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <i class="fas fa-check-circle"></i>
+                        <h3>Govt. of India Recognized</h3>
+                        <p>We are a recognized entity, ensuring credibility and compliance.</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-users"></i>
+                        <h3>Trained & Professional Experts</h3>
+                        <p>Our team consists of skilled and experienced professionals.</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-headset"></i>
+                        <h3>24x7 Platform</h3>
+                        <p>Get support and access our services anytime you need.</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Data Security & Trust</h3>
+                        <p>Your information is safe and secure with our robust systems.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="process animate-on-scroll" role="region" aria-label="Our process section">
+            <div class="container">
+                <h2 class="section-title">Our Proven 5-Step Path to Success</h2>
+                <p class="section-subtitle">We've refined our workflow into five clear, efficient steps, ensuring
+                    transparency and peace of mind from our first conversation to long-term support.</p>
+                <div class="process-timeline">
+                    <div class="process-step">
+                        <div class="icon"><i class="fas fa-comments"></i></div>
+                        <h3>Consultation</h3>
+                        <p>It all begins with understanding your vision. We listen to your goals and provide strategic
+                            advice to chart the best path forward.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="icon"><i class="fas fa-file-alt"></i></div>
+                        <h3>Documentation</h3>
+                        <p>Say goodbye to paperwork headaches. Our meticulous team guides you in preparing and verifying
+                            every necessary document.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="icon"><i class="fas fa-paper-plane"></i></div>
+                        <h3>Submission</h3>
+                        <p>We take charge of the formal procedures, professionally handling the submission of your
+                            application to all relevant authorities.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="icon"><i class="fas fa-check-double"></i></div>
+                        <h3>Approval</h3>
+                        <p>Stay informed, not anxious. We proactively track your application, manage follow-ups, and
+                            ensure
+                            timely approvals.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="icon"><i class="fas fa-headset"></i></div>
+                        <h3>Support</h3>
+                        <p>Our partnership doesn't end here. We provide continuous support to ensure your operations
+                            remain
+                            compliant and successful.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="clients animate-on-scroll" role="region" aria-label="Our Clients">
+            <div class="container">
+                <h2 class="section-title">Trusted by Top-Tier Clients</h2>
+                <p class="section-subtitle">We are proud to have collaborated with some of India's leading NGOs and
+                    top-tier
+                    organizations on impactful government projects.</p>
+                <div class="client-logos-grid">
+                    <div class="client-logo">
+                        <img src="img/logo1.jpeg" alt="Logo of a trusted client of NGO IDEA">
+                    </div>
+                    <div class="client-logo">
+                        <img src="img/logo2.jpeg" alt="Logo of a trusted client of NGO IDEA">
+                    </div>
+                    <div class="client-logo">
+                        <img src="img/logo3.jpeg" alt="Logo of a trusted client of NGO IDEA">
+                    </div>
+                    <div class="client-logo">
+                        <img src="img/logo4.jpeg" alt="Logo of a trusted client of NGO IDEA">
+                    </div>
+                    <div class="client-logo">
+                        <img src="img/logo5.png" alt="Logo of a trusted client of NGO IDEA">
+                    </div>
+                    <div class="client-logo">
+                        <img src="img/logo6.jpeg" alt="Logo of a trusted client of NGO IDEA">
+                    </div>
+                    <div class="client-logo">
+                        <img src="img/logo7.jpg" alt="Logo of a trusted client of NGO IDEA">
+                    </div>
+                    <div class="client-logo">
+                        <img src="img/logo8.png" alt="Logo of a trusted client of NGO IDEA">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="procedure animate-on-scroll" role="region" aria-label="Procedure section">
+            <div class="container">
+                <h2 class="section-title">Getting Started Is Easy</h2>
+                <p class="section-subtitle">Follow our straightforward, four-step onboarding process to begin your
+                    journey
+                    with NGO IDEA today.</p>
+                <div class="procedure-grid">
+                    <div class="procedure-step">
+                        <div class="step-number">01</div>
+                        <h3>Provide Contact Information</h3>
+                        <p>Reach out and schedule a call. Our team is eager to learn about you and your organizational
+                            goals
+                            to provide tailored solutions.</p>
+                    </div>
+                    <div class="procedure-step">
+                        <div class="step-number">02</div>
+                        <h3>Make Appropriate Payments</h3>
+                        <p>Choose the services that align with your requirements and complete the secure payment process
+                            to
+                            get started.</p>
+                    </div>
+                    <div class="procedure-step">
+                        <div class="step-number">03</div>
+                        <h3>Mail Your Documents</h3>
+                        <p>Easily submit your documents online. Our experts are on standby to assist with any questions
+                            and
+                            ensure everything is in order.</p>
+                    </div>
+                    <div class="procedure-step">
+                        <div class="step-number">04</div>
+                        <h3>Sit Back and Relax</h3>
+                        <p>Your work is done. Our dedicated team will now manage the entire process efficiently, striving
+                            for the fastest possible turnaround.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact animate-on-scroll" role="region" aria-label="Contact Us">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Have a question or a project in mind? Fill out the form or contact us
+                    directly.
+                    We're here to help you succeed.</p>
+                <div class="contact-grid">
+                    <div class="contact-info-block">
+                        <h3>Contact Information</h3>
+                        <p>Our team is available to assist you. Reach out through any of the following channels.</p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <span>+91 7827303573</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>thengoidea@gmail.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>143, Ground Floor, Vishnu Garden, Delhi - 10018</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <form action="https://formsubmit.co/thengoidea@gmail.com" method="POST">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_next" value="https://www.ngoidea.org/thank-you.html">
+                            <div class="form-group">
+                                <input type="text" name="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="number" name="number" placeholder="Your Phone number" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="state" placeholder="Your State" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="subject" placeholder="Subject" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea name="message" placeholder="Your Message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer class="footer" role="contentinfo">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
-                    <img src="img/ologo.png" alt="official logo" class="ologo">
+                    <img src="img/ologo.png" alt="NGO IDEA official logo" class="ologo">
                     <p>Building the Foundation for Your Vision's Success. Expert Registration, Compliance, and Digital
                         Growth Services.</p>
                 </div>
@@ -1716,11 +1718,11 @@
                 <div class="footer-col">
                     <h3>Quick Links</h3>
                     <ul>
-                        <li><a href="https://www.ngoidea.org/" aria-label="Home page">Home</a></li>
-                        <li><a href="#" aria-label="About us">About Us</a></li>
-                        <li><a href="services" aria-label="Our services">Our Services</a></li>
-                        <li><a href="#" aria-label="Blog">Blog</a></li>
-                        <li><a href="contact" aria-label="Contact us">Contact Us</a></li>
+                        <li><a href="index.html" aria-label="Home page">Home</a></li>
+                        <li><a href="about.html" aria-label="About us">About Us</a></li>
+                        <li><a href="services.html" aria-label="Our services">Our Services</a></li>
+                        <li><a href="blogs.html" aria-label="Blog">Blog</a></li>
+                        <li><a href="contact.html" aria-label="Contact us">Contact Us</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
@@ -1746,8 +1748,8 @@
             <h3>Get In Touch</h3>
             <p>We're here to help you succeed. Fill out the form below.</p>
             <form action="https://formsubmit.co/thengoidea@gmail.com" method="POST">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_next" value="https://www.ngoidea.org/">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://www.ngoidea.org/thank-you.html">
                 <div class="form-group">
                     <input type="text" name="name" placeholder="Your Name" required>
                 </div>
@@ -1775,7 +1777,6 @@
     <script>
         document.addEventListener('DOMContentLoaded', function () {
 
-            // --- Back to Top Button & Navbar Scroll Effect ---
             const mybutton = document.getElementById("back-to-top-btn");
             const navbar = document.querySelector(".navbar");
 
@@ -1791,36 +1792,30 @@
                 };
             }
 
-            // --- Mobile Menu Logic ---
             const navMenu = document.querySelector('.nav-menu');
             const navLinks = document.querySelectorAll('.nav-menu a');
 
-            // Function to toggle the menu (called by hamburger icon)
             window.toggleMenu = function () {
                 if (navMenu) {
                     navMenu.classList.toggle('active');
                 }
             }
 
-            // Function to close the menu
             const closeMenu = () => {
                 if (navMenu) {
                     navMenu.classList.remove('active');
                 }
             }
 
-            // Add click event listener to each nav link to close the menu
             navLinks.forEach(link => {
                 link.addEventListener('click', closeMenu);
             });
 
-            // --- FAQ Toggle Logic ---
             window.toggleFAQ = function (element) {
                 const answer = element.nextElementSibling;
                 const icon = element.querySelector('i');
                 const isExpanded = element.getAttribute('aria-expanded') === 'true';
 
-                // Close all other open FAQs
                 document.querySelectorAll('.faq-answer').forEach(function (item) {
                     if (item !== answer) {
                         item.style.maxHeight = null;
@@ -1830,7 +1825,6 @@
                     }
                 });
 
-                // Toggle the clicked FAQ
                 if (isExpanded) {
                     answer.style.maxHeight = null;
                     if (icon) icon.style.transform = 'rotate(0deg)';
@@ -1842,7 +1836,6 @@
                 }
             }
 
-            // --- Automatic Stat Counter ---
             const statsPanel = document.querySelector('.stats-panel');
             if (statsPanel) {
                 const statsObserver = new IntersectionObserver((entries, observer) => {
@@ -1862,7 +1855,7 @@
                                     const current = Math.floor(progress * target);
 
                                     if (target >= 1000) {
-                                        counter.innerText = (current / 1000).toFixed(current % 1000 !== 0 ? 1 : 0) + 'T+';
+                                        counter.innerText = (current / 1000).toFixed(current % 1000 !== 0 ? 1 : 0) + 'K+';
                                     } else {
                                         counter.innerText = current + '+';
                                     }
@@ -1871,7 +1864,7 @@
                                         window.requestAnimationFrame(step);
                                     } else {
                                         if (target >= 1000) {
-                                            counter.innerText = (target / 1000) + 'T+';
+                                            counter.innerText = (target / 1000) + 'K+';
                                         } else {
                                             counter.innerText = target + '+';
                                         }
@@ -1899,38 +1892,32 @@
                 animatedElements.forEach(el => scrollObserver.observe(el));
             }
 
-            // --- UPDATED Popup Form Logic ---
             const popupOverlay = document.getElementById('popup-overlay');
-            const openPopupTriggers = document.querySelectorAll('.open-popup-trigger'); // Select all trigger buttons
+            const openPopupTriggers = document.querySelectorAll('.open-popup-trigger');
             const closePopupBtn = document.getElementById('close-popup-btn');
 
             if (openPopupTriggers.length > 0 && popupOverlay && closePopupBtn) {
-                // Function to open the popup
                 const openPopup = (event) => {
-                    event.preventDefault(); // Prevent link from navigating
+                    event.preventDefault();
                     popupOverlay.style.display = 'flex';
                 };
 
-                // Function to close the popup
                 const closePopup = () => {
                     popupOverlay.style.display = 'none';
                 };
 
-                // Add event listener to all trigger buttons
                 openPopupTriggers.forEach(trigger => {
                     trigger.addEventListener('click', openPopup);
                 });
 
                 closePopupBtn.addEventListener('click', closePopup);
 
-                // Close when clicking outside the form container
                 popupOverlay.addEventListener('click', function (event) {
                     if (event.target === popupOverlay) {
                         closePopup();
                     }
                 });
 
-                // Close with the Escape key
                 document.addEventListener('keydown', function (event) {
                     if (event.key === 'Escape' && popupOverlay.style.display === 'flex') {
                         closePopup();
@@ -1943,4 +1930,3 @@
 </body>
 
 </html>
-
