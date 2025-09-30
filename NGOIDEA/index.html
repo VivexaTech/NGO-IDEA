@@ -151,17 +151,6 @@
             }
         }
 
-        .animate-on-scroll {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-        }
-
-        .animate-on-scroll.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
         .header-top {
             background-color: var(--light-bg);
             padding: 12px 5%;
@@ -579,41 +568,6 @@
             color: var(--whatsapp-green);
             margin-right: 15px;
             font-size: 1.3em;
-        }
-
-        .cta-package.animate-on-scroll .package-list li {
-            opacity: 0;
-            transform: translateX(-30px);
-            transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-        }
-
-        .cta-package.animate-on-scroll.visible .package-list li {
-            opacity: 1;
-            transform: translateX(0);
-        }
-
-        .cta-package.animate-on-scroll.visible .package-list:first-child li:nth-child(1) {
-            transition-delay: 0.2s;
-        }
-
-        .cta-package.animate-on-scroll.visible .package-list:first-child li:nth-child(2) {
-            transition-delay: 0.4s;
-        }
-
-        .cta-package.animate-on-scroll.visible .package-list:first-child li:nth-child(3) {
-            transition-delay: 0.6s;
-        }
-
-        .cta-package.animate-on-scroll.visible .package-list:nth-child(2) li:nth-child(1) {
-            transition-delay: 0.8s;
-        }
-
-        .cta-package.animate-on-scroll.visible .package-list:nth-child(2) li:nth-child(2) {
-            transition-delay: 1.0s;
-        }
-
-        .cta-package.animate-on-scroll.visible .package-list:nth-child(2) li:nth-child(3) {
-            transition-delay: 1.2s;
         }
 
         .cta-package .btn {
@@ -1269,8 +1223,8 @@
         </div>
         <ul class="nav-menu">
             <li><a href="https://www.ngoidea.org/" aria-label="Home page">Home</a></li>
-            <li><a href="" aria-label="About us">About Us</a></li>
-            <li><a href="" aria-label="Business setup services">Business Setup</a></li>
+            <li><a href="#about" aria-label="About us">About Us</a></li>
+            <li><a href="#process" aria-label="Business setup services">Business Setup</a></li>
             <li><a href="services.html" aria-label="NGO services">NGO Services</a></li>
             <li><a href="" aria-label="Blog">Blogs</a></li>
             <li><a href="contact.html" aria-label="Contact us">Contact Us</a></li>
@@ -1325,7 +1279,7 @@
             </div>
         </section>
 
-        <section class="about animate-on-scroll" role="region" aria-label="About section">
+        <section class="about" role="region" aria-label="About section">
             <div class="container about-flex">
                 <div class="about-content">
                     <h2 class="section-title" style="text-align: left;">Pioneering Your Path to Success</h2>
@@ -1350,7 +1304,7 @@
             </div>
         </section>
 
-        <section class="cta-package animate-on-scroll" role="region" aria-label="Special package offer">
+        <section class="cta-package" role="region" aria-label="Special package offer">
             <div class="container">
                 <div class="cta-package-content">
                     <h2 class="section-title">Get The Complete NGO Launch Package</h2>
@@ -1376,7 +1330,7 @@
             </div>
         </section>
 
-        <section class="services animate-on-scroll" role="region" aria-label="Services section">
+        <section class="services" role="region" aria-label="Services section">
             <div class="container">
                 <h2 class="section-title">A Spectrum of Comprehensive Solutions</h2>
                 <p class="section-subtitle">From foundational registrations to digital growth strategies, our services
@@ -1489,7 +1443,7 @@
             </div>
         </section>
 
-        <section class="why-choose-us animate-on-scroll" role="region" aria-label="Why choose us section">
+        <section class="why-choose-us" role="region" aria-label="Why choose us section">
             <div class="container">
                 <h2 class="section-title">The NGO IDEA Advantage</h2>
                 <p class="section-subtitle">Discover the cornerstones of our service that make us the preferred partner
@@ -1520,7 +1474,7 @@
             </div>
         </section>
 
-        <section class="process animate-on-scroll" role="region" aria-label="Our process section">
+        <section class="process" role="region" aria-label="Our process section">
             <div class="container">
                 <h2 class="section-title">Our Proven 5-Step Path to Success</h2>
                 <p class="section-subtitle">We've refined our workflow into five clear, efficient steps, ensuring
@@ -1562,7 +1516,7 @@
             </div>
         </section>
 
-        <section class="clients animate-on-scroll" role="region" aria-label="Our Clients">
+        <section class="clients" role="region" aria-label="Our Clients">
             <div class="container">
                 <h2 class="section-title">Trusted by Top-Tier Clients</h2>
                 <p class="section-subtitle">We are proud to have collaborated with some of India's leading NGOs and
@@ -1597,7 +1551,7 @@
             </div>
         </section>
 
-        <section class="procedure animate-on-scroll" role="region" aria-label="Procedure section">
+        <section class="procedure" role="region" aria-label="Procedure section">
             <div class="container">
                 <h2 class="section-title">Getting Started Is Easy</h2>
                 <p class="section-subtitle">Follow our straightforward, four-step onboarding process to begin your
@@ -1635,7 +1589,7 @@
             </div>
         </section>
 
-        <section class="contact animate-on-scroll" role="region" aria-label="Contact Us">
+        <section class="contact" role="region" aria-label="Contact Us">
             <div class="container">
                 <h2 class="section-title">Get In Touch</h2>
                 <p class="section-subtitle">Have a question or a project in mind? Fill out the form or contact us
@@ -1873,19 +1827,6 @@
                 statsObserver.observe(statsPanel);
             }
 
-            const animatedElements = document.querySelectorAll('.animate-on-scroll');
-            if (animatedElements.length > 0) {
-                const scrollObserver = new IntersectionObserver((entries, observer) => {
-                    entries.forEach(entry => {
-                        if (entry.isIntersecting) {
-                            entry.target.classList.add('visible');
-                            observer.unobserve(entry.target);
-                        }
-                    });
-                }, { threshold: 0.1 });
-                animatedElements.forEach(el => scrollObserver.observe(el));
-            }
-
             const popupOverlay = document.getElementById('popup-overlay');
             const openPopupTriggers = document.querySelectorAll('.open-popup-trigger');
             const closePopupBtn = document.getElementById('close-popup-btn');
@@ -1924,4 +1865,3 @@
 </body>
 
 </html>
-
