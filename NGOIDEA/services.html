@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="Explore the comprehensive services offered by NGO IDEA, from NGO and company registration to compliance and funding support.">
-    <meta name="keywords" content="NGO services, company registration services, 12A 80G, GST, legal services India">
+    <meta name="keywords" content="NGO services, company registration services, 12A 80G, GST, legal services India, trademark registration">
     <meta name="author" content="NGO IDEA">
     <title>Our Services - NGO IDEA</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -45,6 +45,25 @@
             max-width: 1200px;
             margin: auto;
             padding: 20px 0;
+        }
+        
+        .btn {
+            background-color: var(--accent-color);
+            color: var(--white);
+            padding: 15px 40px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 1.2em;
+            display: inline-block;
+            transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #0582aa;
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
         }
 
         h1,
@@ -213,6 +232,60 @@
             font-size: 1.5em;
             margin-bottom: 15px;
         }
+        
+        /* === NEWLY ADDED & STYLED SECTION for low-rate-services === */
+        .low-rate-services {
+            padding: 80px 0;
+            background: #e6f6fc; /* Eye-catching light blue */
+        }
+        
+        .low-rate-services .section-title {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+
+        .low-rate-services .section-subtitle {
+            margin-bottom: 50px;
+        }
+        
+        .service-list-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .service-list-grid .package-list {
+            background: var(--white);
+            list-style: none;
+            padding: 30px 25px;
+            margin: 0;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+            border-top: 5px solid var(--secondary-color);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .service-list-grid .package-list:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+        }
+
+        .service-list-grid .package-list li {
+            font-size: 1.05em;
+            margin-bottom: 12px;
+            color: var(--text-color);
+            display: flex;
+            align-items: center;
+        }
+        .service-list-grid .package-list li i {
+            color: var(--secondary-color);
+            font-size: 1.2em;
+            margin-right: 12px;
+        }
+        .cta-container {
+             text-align: center;
+             margin-top: 50px;
+        }
+        /* === END NEW SECTION STYLES === */
 
         .why-choose-us {
             padding: 80px 0;
@@ -707,6 +780,11 @@
                         company registrations.</p>
                 </div>
                 <div class="service-item">
+                    <i class="fas fa-registered"></i>
+                    <h3>Trademark Registration</h3>
+                    <p>Protect your brand identity. We provide comprehensive services for trademark registration, ensuring your intellectual property is legally secured.</p>
+                </div>
+                <div class="service-item">
                     <i class="fas fa-laptop-code"></i>
                     <h3>Website Development</h3>
                     <p>Get a professional online presence with a custom-designed website, basic CMS for content editing,
@@ -757,6 +835,51 @@
                 </div>
 
 
+            </div>
+        </div>
+    </section>
+
+    <section class="low-rate-services" role="region" aria-label="Our Low Rate Services">
+        <div class="container">
+            <h2 class="section-title">Best Services at Low Rates</h2>
+            <p class="section-subtitle">We are providing an extensive range of professional services at highly competitive prices to support your organization's growth and compliance.</p>
+            <div class="service-list-grid">
+                <ul class="package-list">
+                    <li><i class="fas fa-check-circle"></i> 12A & 80G Registration</li>
+                    <li><i class="fas fa-check-circle"></i> NGO Darpan / Niti Aayog</li>
+                    <li><i class="fas fa-check-circle"></i> E-Anudan Grants Certificate</li>
+                    <li><i class="fas fa-check-circle"></i> CSR Registration</li>
+                    <li><i class="fas fa-check-circle"></i> Trust Registration</li>
+                    <li><i class="fas fa-check-circle"></i> Society Registration</li>
+                    <li><i class="fas fa-check-circle"></i> Section-8 Registration</li>
+                    <li><i class="fas fa-check-circle"></i> FCRA Registration</li>
+                    <li><i class="fas fa-check-circle"></i> Website Development</li>
+                </ul>
+                <ul class="package-list">
+                    <li><i class="fas fa-check-circle"></i> Audit Services</li>
+                    <li><i class="fas fa-check-circle"></i> ITR Filing</li>
+                    <li><i class="fas fa-check-circle"></i> Project Report / Proposal</li>
+                    <li><i class="fas fa-check-circle"></i> Annual Report Creation</li>
+                    <li><i class="fas fa-check-circle"></i> ISO Registration</li>
+                    <li><i class="fas fa-check-circle"></i> GST Registration</li>
+                    <li><i class="fas fa-check-circle"></i> NGO PAN CARD</li>
+                    <li><i class="fas fa-check-circle"></i> Section 8 Annual Compliance</li>
+                    <li><i class="fas fa-check-circle"></i> MSME Registration</li>
+                </ul>
+                <ul class="package-list">
+                    <li><i class="fas fa-check-circle"></i> Private Limited Company Reg.</li>
+                    <li><i class="fas fa-check-circle"></i> FSSAI Registration</li>
+                    <li><i class="fas fa-check-circle"></i> 10BD Filing</li>
+                    <li><i class="fas fa-check-circle"></i> Logo Designing</li>
+                    <li><i class="fas fa-check-circle"></i> Pvt. Ltd. Company Registration</li>
+                    <li><i class="fas fa-check-circle"></i> OPC Company Registration</li>
+                    <li><i class="fas fa-check-circle"></i> Section 8 Company / NGO</li>
+                    <li><i class="fas fa-check-circle"></i> Partnership Firm Registration</li>
+                    <li><i class="fas fa-check-circle"></i> LLP Company Registration</li>
+                </ul>
+            </div>
+             <div class="cta-container">
+                <a href="contact" class="btn" aria-label="Enquire About Our Services">Enquire Now <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
     </section>
@@ -921,4 +1044,3 @@
 </body>
 
 </html>
-
