@@ -19,24 +19,17 @@
     <meta name="apple-mobile-web-app-title" content="NGO IDEA" />
     <link rel="manifest" href="https://www.ngoidea.org/favicon/site.webmanifest" />
     <style>
-        /* Root Variables for Consistency */
         :root {
             --primary-color: #091e3e;
-            /* Dark Blue */
             --secondary-color: #06a3da;
-            /* Light Blue */
             --accent-color: #06a3da;
-            /* Light Blue */
             --light-bg: #f8f9fa;
-            /* Light Gray */
             --dark-bg: #061429;
-            /* Very Dark Blue for Footer */
             --text-color: #333;
             --white: #fff;
             --whatsapp-green: #25D366;
         }
 
-        /* General Body Styles */
         body {
             font-family: 'Poppins', sans-serif;
             margin: 0;
@@ -45,7 +38,6 @@
             background-color: var(--white);
             scroll-behavior: smooth;
             overflow-x: hidden;
-            /* This is the key to stopping horizontal scroll */
         }
 
         * {
@@ -83,7 +75,6 @@
             margin-right: auto;
         }
 
-        /* Header & Navigation Styles (Copied from main page) */
         .header-top {
             background-color: var(--light-bg);
             padding: 12px 5%;
@@ -184,7 +175,6 @@
             color: var(--secondary-color);
         }
 
-        /* Mobile Menu */
         @media (max-width: 992px) {
             .hamburger {
                 display: block;
@@ -225,7 +215,6 @@
             }
         }
 
-        /* === PAGE HEADER === */
         .page-header {
             background: linear-gradient(rgba(9, 30, 62, 0.85), rgba(9, 30, 62, 0.85)), url('img/image2.jpg') no-repeat center center/cover;
             padding: 80px 0;
@@ -259,7 +248,6 @@
             box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
         }
 
-        /* Contact Us Section */
         .contact {
             padding: 80px 0;
         }
@@ -328,7 +316,6 @@
             min-height: 150px;
         }
 
-        /* Map Section */
         .map-section {
             padding-bottom: 80px;
         }
@@ -337,7 +324,6 @@
             position: relative;
             overflow: hidden;
             padding-top: 56.25%;
-            /* 16:9 Aspect Ratio */
             border-radius: 12px;
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
         }
@@ -351,8 +337,6 @@
             border: 0;
         }
 
-
-        /* Footer */
         .footer {
             background-color: var(--dark-bg);
             color: #ccc;
@@ -474,7 +458,6 @@
             border-top: 1px solid rgba(255, 255, 255, 0.1);
         }
 
-        /* Back to Top & WhatsApp Buttons */
         #back-to-top-btn {
             display: none;
             justify-content: center;
@@ -524,8 +507,70 @@
             margin-top: 15px;
         }
 
-        /* Responsive */
+        /* === NEW: Mobile Floating Contact Bar === */
+        .mobile-sticky-footer {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: var(--primary-color);
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+            z-index: 999;
+        }
+
+        .mobile-sticky-footer-inner {
+            display: flex;
+            justify-content: space-around;
+            padding: 8px;
+            gap: 8px;
+        }
+
+        .mobile-sticky-footer a {
+            flex: 1;
+            padding: 12px 10px;
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1em;
+            text-align: center;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            transition: background-color 0.3s;
+        }
+
+        .mobile-sticky-footer .btn-call {
+            background-color: #ffc107;
+            color: var(--primary-color);
+        }
+
+        .mobile-sticky-footer .btn-enquire {
+            background-color: #2c3e50;
+            border: 1px solid var(--secondary-color);
+        }
+
+        .mobile-sticky-footer .btn-call:hover {
+            background-color: #e0a800;
+        }
+
+        .mobile-sticky-footer .btn-enquire:hover {
+            background-color: var(--secondary-color);
+        }
+        /* === END NEW CSS === */
+        
         @media (max-width: 768px) {
+            body {
+                /* Add padding to prevent floating bar from overlapping footer content */
+                padding-bottom: 70px;
+            }
+            
+            /* Show the new floating bar on mobile */
+            .mobile-sticky-footer {
+                display: block;
+            }
 
             .section-title,
             .page-header h1 {
@@ -570,17 +615,17 @@
     </header>
 
     <nav class="navbar" role="navigation" aria-label="Main navigation">
-        <a href="https://www.ngoidea.org/" class="logo" aria-label="NGO IDEA Home">NGO IDEA</a>
+        <a href="index.html" class="logo" aria-label="NGO IDEA Home">NGO IDEA</a>
         <div class="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">
             <i class="fas fa-bars"></i>
         </div>
         <ul class="nav-menu">
-            <li><a href="https://www.ngoidea.org/" aria-label="Home page">Home</a></li>
-            <li><a href="#" aria-label="About us">About Us</a></li>
-            <li><a href="#" aria-label="Business setup services">Business Setup</a></li>
-            <li><a href="services" aria-label="NGO services">NGO Services</a></li>
+            <li><a href="index.html" aria-label="Home page">Home</a></li>
+            <li><a href="index.html#about" aria-label="About us">About Us</a></li>
+            <li><a href="index.html#process" aria-label="Business setup services">Business Setup</a></li>
+            <li><a href="services.html" aria-label="NGO services">NGO Services</a></li>
             <li><a href="#" aria-label="Blog">Blogs</a></li>
-            <li><a href="contact" class="active" aria-label="Contact us">Contact Us</a></li>
+            <li><a href="contact.html" class="active" aria-label="Contact us">Contact Us</a></li>
         </ul>
     </nav>
 
@@ -675,11 +720,11 @@
                 <div class="footer-col">
                     <h3>Quick Links</h3>
                     <ul>
-                        <li><a href="https://www.ngoidea.org/" aria-label="Home page">Home</a></li>
-                        <li><a href="#" aria-label="About us">About Us</a></li>
-                        <li><a href="services" aria-label="Our services">Our Services</a></li>
+                        <li><a href="index.html" aria-label="Home page">Home</a></li>
+                        <li><a href="index.html#about" aria-label="About us">About Us</a></li>
+                        <li><a href="services.html" aria-label="Our services">Our Services</a></li>
                         <li><a href="#" aria-label="Blog">Blog</a></li>
-                        <li><a href="contact" aria-label="Contact us">Contact Us</a></li>
+                        <li><a href="contact.html" aria-label="Contact us">Contact Us</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
@@ -698,6 +743,17 @@
             <p>© NGO IDEA. All Rights Reserved. Powered by Vivexa Tech</p>
         </div>
     </footer>
+    
+    <div class="mobile-sticky-footer">
+        <div class="mobile-sticky-footer-inner">
+            <a href="tel:+917827303573" class="btn-call">
+                <i class="fas fa-phone"></i> Call Now
+            </a>
+            <a href="contact.html" class="btn-enquire">
+                <i class="fas fa-comment-dots"></i> Enquire Now
+            </a>
+        </div>
+    </div>
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
@@ -707,7 +763,6 @@
             const navbar = document.querySelector(".navbar");
 
             if (mybutton && navbar) {
-                // Show navbar shadow immediately on contact page since it's not starting at the very top
                 navbar.classList.add("scrolled");
 
                 window.onscroll = function () {
@@ -716,7 +771,6 @@
                         navbar.classList.add("scrolled");
                     } else {
                         mybutton.style.display = "none";
-                        // Keep the scrolled class on this page
                     }
                 };
             }
@@ -733,7 +787,3 @@
 </body>
 
 </html>
-
-
-
-
