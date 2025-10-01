@@ -587,14 +587,20 @@
             box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
         }
         
-        /* === NEW/MODIFIED SECTION STYLES for low-rate-services === */
+        /* === NEWLY ADDED & STYLED SECTION for low-rate-services === */
         .low-rate-services {
             padding: 80px 0;
             background: #e6f6fc; /* Eye-catching light blue */
         }
         
         .low-rate-services .section-title {
-            color: var(--primary-color);
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 15px 40px;
+            border-radius: 8px;
+            display: inline-block;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            border-bottom: 4px solid var(--secondary-color);
             margin-bottom: 20px;
         }
 
@@ -1470,50 +1476,53 @@
             </div>
         </section>
 
-        <section class="low-rate-services" role="region" aria-label="Our Low Rate Services">
-            <div class="container">
+    <section class="low-rate-services" role="region" aria-label="Our Low Rate Services">
+        <div class="container">
+            <div style="text-align: center;">
                 <h2 class="section-title">Best Services at Low Rates</h2>
-                <p class="section-subtitle">We are providing an extensive range of professional services at highly competitive prices to support your organization's growth and compliance.</p>
-                <div class="service-list-grid">
-                    <ul class="package-list">
-                        <li><i class="fas fa-check-circle"></i> 12A & 80G Registration</li>
-                        <li><i class="fas fa-check-circle"></i> NGO Darpan / Niti Aayog</li>
-                        <li><i class="fas fa-check-circle"></i> E-Anudan Grants Certificate</li>
-                        <li><i class="fas fa-check-circle"></i> CSR Registration</li>
-                        <li><i class="fas fa-check-circle"></i> Trust Registration</li>
-                        <li><i class="fas fa-check-circle"></i> Society Registration</li>
-                        <li><i class="fas fa-check-circle"></i> Section-8 Registration</li>
-                        <li><i class="fas fa-check-circle"></i> FCRA Registration</li>
-                        <li><i class="fas fa-check-circle"></i> Website Development</li>
-                    </ul>
-                    <ul class="package-list">
-                        <li><i class="fas fa-check-circle"></i> Audit Services</li>
-                        <li><i class="fas fa-check-circle"></i> ITR Filing</li>
-                        <li><i class="fas fa-check-circle"></i> Project Report / Proposal</li>
-                        <li><i class="fas fa-check-circle"></i> Annual Report Creation</li>
-                        <li><i class="fas fa-check-circle"></i> ISO Registration</li>
-                        <li><i class="fas fa-check-circle"></i> GST Registration</li>
-                        <li><i class="fas fa-check-circle"></i> NGO PAN CARD</li>
-                        <li><i class="fas fa-check-circle"></i> Section 8 Annual Compliance</li>
-                        <li><i class="fas fa-check-circle"></i> MSME Registration</li>
-                    </ul>
-                    <ul class="package-list">
-                        <li><i class="fas fa-check-circle"></i> Private Limited Company Reg.</li>
-                        <li><i class="fas fa-check-circle"></i> FSSAI Registration</li>
-                        <li><i class="fas fa-check-circle"></i> 10BD Filing</li>
-                        <li><i class="fas fa-check-circle"></i> Logo Designing</li>
-                        <li><i class="fas fa-check-circle"></i> Pvt. Ltd. Company Registration</li>
-                        <li><i class="fas fa-check-circle"></i> OPC Company Registration</li>
-                        <li><i class="fas fa-check-circle"></i> Section 8 Company / NGO</li>
-                        <li><i class="fas fa-check-circle"></i> Partnership Firm Registration</li>
-                        <li><i class="fas fa-check-circle"></i> LLP Company Registration</li>
-                    </ul>
-                </div>
-                 <div class="cta-container">
-                    <a href="services" class="btn" aria-label="View All Our Services">View All Our Services <i class="fas fa-arrow-right"></i></a>
-                </div>
             </div>
-        </section>
+            <p class="section-subtitle">We are providing an extensive range of professional services at highly competitive prices to support your organization's growth and compliance.</p>
+            <div class="service-list-grid">
+                <ul class="package-list">
+                    <li><i class="fas fa-check-circle"></i> 12A & 80G Registration</li>
+                    <li><i class="fas fa-check-circle"></i> NGO Darpan / Niti Aayog</li>
+                    <li><i class="fas fa-check-circle"></i> E-Anudan Grants Certificate</li>
+                    <li><i class="fas fa-check-circle"></i> CSR Registration</li>
+                    <li><i class="fas fa-check-circle"></i> Trust Registration</li>
+                    <li><i class="fas fa-check-circle"></i> Society Registration</li>
+                    <li><i class="fas fa-check-circle"></i> Section-8 Registration</li>
+                    <li><i class="fas fa-check-circle"></i> FCRA Registration</li>
+                    <li><i class="fas fa-check-circle"></i> Website Development</li>
+                </ul>
+                <ul class="package-list">
+                    <li><i class="fas fa-check-circle"></i> Audit Services</li>
+                    <li><i class="fas fa-check-circle"></i> ITR Filing</li>
+                    <li><i class="fas fa-check-circle"></i> Project Report / Proposal</li>
+                    <li><i class="fas fa-check-circle"></i> Annual Report Creation</li>
+                    <li><i class="fas fa-check-circle"></i> ISO Registration</li>
+                    <li><i class="fas fa-check-circle"></i> GST Registration</li>
+                    <li><i class="fas fa-check-circle"></i> NGO PAN CARD</li>
+                    <li><i class="fas fa-check-circle"></i> Section 8 Annual Compliance</li>
+                    <li><i class="fas fa-check-circle"></i> MSME Registration</li>
+                </ul>
+                <ul class="package-list">
+                    <li><i class="fas fa-check-circle"></i> Private Limited Company Reg.</li>
+                    <li><i class="fas fa-check-circle"></i> FSSAI Registration</li>
+                    <li><i class="fas fa-check-circle"></i> 10BD Filing</li>
+                    <li><i class="fas fa-check-circle"></i> Logo Designing</li>
+                    <li><i class="fas fa-check-circle"></i> Pvt. Ltd. Company Registration</li>
+                    <li><i class="fas fa-check-circle"></i> OPC Company Registration</li>
+                    <li><i class="fas fa-check-circle"></i> Section 8 Company / NGO</li>
+                    <li><i class="fas fa-check-circle"></i> Partnership Firm Registration</li>
+                    <li><i class="fas fa-check-circle"></i> LLP Company Registration</li>
+                </ul>
+            </div>
+             <div class="cta-container">
+                <a href="contact" class="btn" aria-label="Enquire About Our Services">Enquire Now <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
         <section class="services" role="region" aria-label="Services section">
             <div class="container">
                 <h2 class="section-title">A Spectrum of Comprehensive Solutions</h2>
